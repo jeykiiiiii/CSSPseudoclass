@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: black;
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+    cursor: pointer;
+}
+header:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: white; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 100px; 
+}
+.wrapper:hover {
+    border: 2px solid #333;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+button:hover {
+    background-color: black;
+    color:white;
+}
+
+button:active {
+    font-size: 18px;
+    color: white; 
+    background-color: black;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    color: black;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="text"]:focus {
+    border: 2px solid blue;
+}
+
+input[type="text"]::placeholder {
+    color: black;
+}
+
+input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+a {
+    display: block;
+    margin-top: 10px; 
+    font-size: 16px;
+    color: black;
+    text-decoration: none; 
+    position: relative; 
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+a:active {
+    font-weight: bold;
+}
